@@ -22,6 +22,10 @@ body {
   line-height: 1.19;
   color: var(--main-color);
   text-decoration: none;
+
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .span-header,
@@ -50,6 +54,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   top: 32px;
+
+  padding: 32px 0px 32px 0px;
 }
 
 .link-main,
@@ -61,6 +67,7 @@ body {
 .sublink,
 .link {
   color: var(--secondary-color);
+  padding: 32px 0px 32px 0px;
 }
 
 .link,
@@ -77,8 +84,8 @@ body {
   font-size: 16px;
   line-height: 1.88;
   border: 0ch;
-  width: 216;
   cursor: pointer;
+  letter-spacing: 0.06em;
   background-color: var(--link-color);
   color: var(--white-color);
   border-radius: 4px;
@@ -155,6 +162,8 @@ body {
   line-height: 1.16;
   color: var(--main-color);
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -225,7 +234,7 @@ body {
 
 .container,
 .container-nav {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -267,15 +276,13 @@ ul {
   margin-right: 50px;
 }
 
+.current {
+  color: var(--link-color);
+}
+
 .header {
   border-bottom: 1px solid var(--border-color);
   flex-direction: column;
-}
-
-.link-header {
-  margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 
 /* Хедер */
@@ -302,14 +309,13 @@ ul {
   background: var(--background-color);
 }
 
-.link-footer {
-  margin-bottom: 20px;
+.contacts-adress {
+  margin-top: 20px;
 }
 
 .list-item-map,
-.list-item-mail,
-.list-item-tel {
-  margin-top: 9px;
+.list-item-mail {
+  margin-bottom: 9px;
 }
 
 /* Футер */
@@ -335,10 +341,6 @@ ul {
 .section-hero-list {
   display: flex;
   gap: 30px;
-}
-
-.section-title {
-  margin-bottom: 56px;
 }
 
 .team-name,
@@ -371,6 +373,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -385,7 +388,6 @@ ul {
   border-radius: 4px;
   background-color: var(--subbackground-color);
   margin-right: 8px;
-  margin-bottom: 50px;
   padding: 6px 22px 6px 22px;
 }
 
@@ -401,7 +403,6 @@ ul {
   border-radius: 4px;
   background-color: var(--subbackground-color);
   margin-right: 8px;
-  margin-bottom: 50px;
   padding: 6px 25px 6px 25px;
 }
 
@@ -418,18 +419,21 @@ ul {
 }
 .section-list-logo {
   display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card-orlean {
   padding: 20px 24px;
 }
 
-.section-item-logo,
-.section-item-logo-orlean {
-  margin-right: 30px;
-  margin-bottom: 30px;
+.section-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.section-list-logo {
-  flex-wrap: wrap;
+.section-img-orlean {
+  background: rgba(0, 0, 0, 0.2);
 }

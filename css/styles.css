@@ -42,7 +42,10 @@ body {
 .list-team,
 .group,
 .list,
-.section-list-logo {
+.section-list-logo,
+.list-clients,
+.list-socialweb,
+.team-socialweb-list {
   list-style-type: none;
 }
 
@@ -156,13 +159,17 @@ body {
   line-height: 1.71;
   color: var(--secondary-color);
 }
-.section-title {
+.section-title,
+.title-clients {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--main-color);
   text-align: center;
+}
 
+.section-title,
+.title-clients {
   margin-bottom: 50px;
 }
 
@@ -208,7 +215,13 @@ body {
 .link-tel:focus,
 .link-tel:hover,
 .link-mail:focus,
-.link-mail:hover {
+.link-mail:hover,
+.socialweb-item:focus,
+.socialweb-item:hover,
+.clients-item:hover,
+.clients-item:focus,
+.team-socialweb-item:hover,
+.team-socialweb-item:focus {
   color: var(--link-color);
 }
 
@@ -254,7 +267,9 @@ ul {
 
 /* Хедер */
 
-.container-nav {
+.container-nav,
+.list-socialweb,
+.team-socialweb-list {
   display: flex;
 }
 
@@ -338,7 +353,8 @@ ul {
 
 .list-team,
 .list,
-.section-hero-list {
+.section-hero-list,
+.list-clients {
   display: flex;
   gap: 30px;
 }
@@ -350,7 +366,8 @@ ul {
 }
 
 .team-position,
-.img-foto {
+.img-foto,
+.team-socialweb-list {
   margin-bottom: 30px;
 }
 
@@ -432,4 +449,30 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.list-clients,
+.team-socialweb-list {
+  justify-content: center;
+}
+
+.list-socialweb,
+.team-socialweb-list {
+  gap: 10px;
+}
+
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.socialweb-item,
+.clients-item,
+.team-socialweb-item {
+  cursor: pointer;
 }

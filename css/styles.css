@@ -476,3 +476,9 @@ ul {
 .team-socialweb-item {
   cursor: pointer;
 }
+
+.svg-list {
+  background-color: var(--subbackground-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}

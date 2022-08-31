@@ -310,6 +310,7 @@ ul {
   padding: 200px 0px;
   background: var(--background-color);
   text-align: center;
+  background-image: url(../images/hero-img.jpg);
 }
 
 .section {
@@ -433,9 +434,6 @@ ul {
   padding: 20px 24px;
 }
 
-.section-item-logo-orlean {
-  border: 1px solid var(--border-color);
-}
 .section-list-logo {
   display: flex;
   margin: 0;
@@ -501,6 +499,7 @@ ul {
   border: 1px solid var(--subborder-color);
   border-radius: 4px;
   display: block;
+  cursor: pointer;
 }
 
 .mail,
@@ -508,6 +507,11 @@ ul {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.mail:hover {
+  fill: var(--link-color);
 }
 
 .mini-logo {

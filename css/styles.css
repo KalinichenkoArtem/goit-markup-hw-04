@@ -522,7 +522,6 @@ ul {
   height: 20px;
   padding: 12px;
   margin-right: 10px;
-  border-radius: 19px;
 }
 
 .footer-socialweb-list {
@@ -535,7 +534,16 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.mini-logo:hover {
-  fill: var(--white-color);
-  background-color: var(--link-color);
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--link-color);
+}
+
+.link-logo:hover .logo,
+.link-logo:focus .logo {
+  fill: var(--link-color);
+}
+
+.logo {
+  fill: var(--link-color);
 }

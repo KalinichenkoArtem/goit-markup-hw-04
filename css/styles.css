@@ -7,6 +7,7 @@
   --subbackground-color: #f5f4fa;
   --border-color: #ececec;
   --subborder-color: #afb1b8;
+  --backgroundminilogo-color: #ffffff1a;
 }
 
 body {
@@ -515,6 +516,14 @@ ul {
   height: 12px;
   margin-right: 10px;
   cursor: pointer;
+  fill: var(--subborder-color);
+}
+
+.link:hover .mail,
+.link:focus .mail,
+.sublink:hover .tel,
+.sublink:focus .tel {
+  fill: currentColor;
 }
 
 .mini-logo {
@@ -534,9 +543,9 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--link-color);
+.logo:hover,
+.logo:focus {
+  border-color: var(--link-color);
 }
 
 .link-logo:hover .logo,
@@ -545,5 +554,29 @@ ul {
 }
 
 .logo {
-  fill: var(--link-color);
+  fill: var(--subborder-color);
+}
+
+.mini-logo {
+  fill: var(--subborder-color);
+}
+
+.mini-logo:hover {
+  fill: var(--white-color);
+  background-color: var(--link-color);
+}
+
+.mini-logo-footer {
+  fill: var(--white-color);
+  background-color: var(--backgroundminilogo-color);
+}
+
+.container-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.social-webs {
+  margin-left: 70px;
 }

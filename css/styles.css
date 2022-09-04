@@ -541,7 +541,7 @@ ul {
 .team-socialweb-item {
   width: 44px;
   height: 44px;
-  background-color: #2121;
+  background-color: var(--white-color);
   border-radius: 50%;
 }
 
@@ -552,13 +552,13 @@ ul {
   border-radius: 50%;
 }
 
-.team-socialweb-item:hover,
-.team-socialweb-item:focus {
-  background-color: var(--link-color);
+.team-socialweb-item:hover .mini-logo,
+.team-socialweb-item:focus .mini-logo {
   fill: var(--white-color);
 }
 
-.mini-logo {
+.mini-logo,
+.mini-logo-footer {
   width: 20px;
   height: 20px;
 }
@@ -608,6 +608,10 @@ ul {
 }
 
 .logo {
+  fill: var(--subborder-color);
+}
+
+.mini-logo {
   fill: var(--subborder-color);
 }
 
